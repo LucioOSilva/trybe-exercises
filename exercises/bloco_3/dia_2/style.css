@@ -1,0 +1,47 @@
+body {
+    font-family: Barlow, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #FFD8B1;
+    color: #610023;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 65px;
+    text-align: center;
+
+}
+
+p {
+    margin-left: 350px;
+}
+
+a {
+    color: #C27F79;
+    text-decoration: none;
+}
+
+.container-center {
+    text-align: center;
+}
+
+
+#myPhoto {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 3px salmon;
+    border: 1px solid #666666;
+    float: left;
+    margin-left: 25px;
+}
+
+
+#myHistory {
+    height: 500px;
+    margin: 70px;
+}
+
+.nvb {
+    display: inline;
+    padding-left: 10px;
+}
