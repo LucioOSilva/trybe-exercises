@@ -1,0 +1,53 @@
+a {
+    text-decoration: none;
+}
+
+body {font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(25, 50, 50);
+    margin: 0px;
+}
+
+footer{
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    margin: auto;
+    text-align: center;
+    width: 1080px;
+}
+
+nav ul {
+    text-align: right;
+}
+
+table, tr, th, td {
+    border: 2px solid black;
+    margin: 100px;
+    padding: 0px 25px;
+}
+
+#structure {
+    margin: 2% 6%;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.imgstyle {
+    border: 5px solid yellowgreen;
+    border-radius: 35px;
+    margin: 0px;
+}
+
+
+
+.nav-bar {
+    display: inline-block;
+    padding: 15px;
+    height: 25px;
+    
+}
+
+
