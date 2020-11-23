@@ -1,0 +1,71 @@
+body {
+    font-family: Barlow, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    color: #610023;
+    background: rgb(200,200,200);
+    background: linear-gradient(11deg, rgba(200,200,200,1) 25%, rgba(255,235,205,1) 83%);
+}
+a {
+
+    color: #C27F79;
+    text-decoration: none;
+}
+
+#mp{
+    border: 10px solid blanchedalmond;
+    border-radius: 50%;
+}
+
+#mySkills {
+    padding: 25px;
+}
+
+#myAbout {
+    padding: 25px;
+}
+
+.cont-main{
+    background-color: whitesmoke;
+    margin: 6% 12%;
+}
+
+.cont-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.box-title {
+    padding: 25px;
+    width: 50%;
+}
+
+.box-pic {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.nvb {
+    display: inline;
+    padding-right: 25px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 65px;
+    font-weight: 600;
+    
+}
