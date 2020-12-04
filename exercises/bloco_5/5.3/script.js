@@ -23,26 +23,45 @@ for (let index = 0; index < dezDaysList.length; index += 1) {
 }
 
 // 2-
-function holidays(nameHolidays) {
+function createButton(nomeBotao,idText,) {
   const elementHolder = document.querySelector('div.buttons-container');
   const newElement = document.createElement('button');
-  newElement.id = "btn-holiday";
-  newElement.innerText = nameHolidays;
+  newElement.id = idText;
+  newElement.innerText = nomeBotao;
   elementHolder.appendChild(newElement);
 }
-let nameHolidays = 'Feriados';
-holidays(nameHolidays);
+createButton('Feriados',"btn-holiday");
 
-// 3-
-function changeBGHoliday () {
+// 3- (completar o modo reverso)
+function changeBGbutton () {
   const elementHolderButton = document.querySelector('button#btn-holiday');
-  const elementHolderHolidayList = document.querySelectorAll('.holiday')
-  elementHolderButton.addEventListener('click', function (event) {
-    for (let index = 0; index < elementHolderHolidayList.length; index += 1) {
-      elementHolderHolidayList[index].style.backgroundColor = "red";
+  const elementHolderList = document.querySelectorAll('.holiday')
+  elementHolderButton.addEventListener('click', function () {
+    for (let index = 0; index < elementHolderList.length; index += 1) {
+      elementHolderList[index].style.backgroundColor = "red";
     }
   }
   );
 
 }
-changeBGHoliday();
+changeBGbutton();
+
+// 4- reaproveita item 2
+createButton('Sexta-feira',"btn-friday");
+
+// 5-
+function changeTextbutton () {
+  const elementHolderButton = document.querySelector('button#btn-friday');
+  
+  const elementHolderList = document.querySelectorAll('li');
+  console.log(elementHolderList.parentNode);
+
+  //elementHolderButton.addEventListener('click', function () {
+  //  for (let index = 0; index < elementHolderList.length; index += 1) {
+  //    elementHolderList[index].style.backgroundColor = "red";
+  //  }
+  //}
+  //);
+
+}
+changeTextbutton();
