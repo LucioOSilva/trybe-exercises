@@ -3,3 +3,142 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: whitesmoke;
+  font-size: 18px;
+}
+
+figure {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+figcaption {
+  text-align: center;
+}
+
+img {
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+h2 {
+  margin: 5px;
+  text-align: center;
+}
+
+p {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flex-line {
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  body {
+    background-color: tomato;
+  }
+
+  h1::before {
+    background-color: yellow;
+    content: "(acima de 450px)";
+    display: block;
+    font-size: 10px;
+  }
+
+  p {
+    margin: 10px 5%;
+  }
+
+  img {
+    margin: 5px;
+  }
+}
+
+@media (min-width: 930px) {
+  body {
+    background-color: teal;
+    font-size: 1.2em;
+  }
+
+  h1::before {
+    background-color: orangered;
+    content: "(acima de 930px)";
+    display: block;
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 930px;
+  }
+
+  .container p {
+    max-width: 930px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-color: rgb(36, 82, 151);
+    font-size: 1.3em;
+  }
+
+  h1::before {
+    background-color: orchid;
+    content: "(acima de 1400px)";
+    display: block;
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+
+  .container p {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1900px) {
+  body {
+    background-color: rgb(241, 206, 241);
+    font-size: 1.5em;
+  }
+
+  h1::before {
+    background-color: rgb(72, 178, 194);
+    content: "(acima de 1400px)";
+    display: block;
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 1980px;
+  }
+
+  .container p {
+    max-width: 1980px;
+  }
+
+  figure {
+    flex-basis: 350px;
+    margin: 5px;
+  }
+}
