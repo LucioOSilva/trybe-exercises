@@ -12,8 +12,8 @@ function addJoke (joke) {
   jokeElement.innerText = joke;
   document.body.appendChild(jokeElement);
 }
-const fetchJoke = () => {
-  fetch(API_URL, myObject)
+async function fetchJoke() {
+  return fetch(API_URL, myObject)
     .then(response => response.json())
     .then(data => addJoke(data.joke));
 };
