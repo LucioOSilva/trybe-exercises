@@ -13,7 +13,7 @@ function addJoke (joke) {
   document.body.appendChild(jokeElement);
 }
 async function fetchJoke() {
-  return fetch(API_URL, myObject)
+  return await fetch(API_URL, myObject)
     .then(response => response.json())
     .then(data => addJoke(data.joke));
 };
