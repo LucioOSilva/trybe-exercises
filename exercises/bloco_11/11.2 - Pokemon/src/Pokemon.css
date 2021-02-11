@@ -1,0 +1,39 @@
+.pokeBlock {
+  background-color: aliceblue;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: 10px;
+  width: 47%;
+}
+
+.pokeData {
+  margin: 10px auto;
+  text-align: center;
+  width: 45%;
+}
+
+.pokeImg {
+  margin: auto;
+  text-align: center;
+  width: 150px;
+}
+
+@media (max-width: 800px) {
+  .pokeBlock {
+    margin: 10px 25px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .pokeBlock {
+    margin: 10px;
+    width: 90%;
+  }
+
+  .pokeImg {
+    width: 100px;
+  }
+}

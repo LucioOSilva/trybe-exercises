@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.App {
+  background-color: whitesmoke;
+}
